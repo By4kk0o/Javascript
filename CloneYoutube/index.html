@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>YouTube Clone</title>
+    <link rel="stylesheet" type="text/css" href="styles.css" />
+  </head>
+  <body>
+    <div id="videoPlayer">
+      <video id="videoElement" controls>
+        <source src="" type="video/mp4" />
+      </video>
+      <div id="videoDetails">
+        <h2 id="videoTitle"></h2>
+        <p id="videoDescription"></p>
+      </div>
+    </div>
+    <div id="videoList">
+      <ul id="videoItems"></ul>
+    </div>
+
+    <script src="https://apis.google.com/js/client.js?onload=init"></script>
+    <script src="app.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+  </body>
+</html>
