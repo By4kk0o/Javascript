@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>Rating System</title>
+</head>
+<body>
+  <h1>Rating System</h1>
+  <div class="categories">
+    <div class="category">
+      <h2>Responsive</h2>
+      <div class="stars" data-category="responsive">
+        <i class="star fas fa-star" data-value="1"></i>
+        <i class="star fas fa-star" data-value="2"></i>
+        <i class="star fas fa-star" data-value="3"></i>
+        <i class="star fas fa-star" data-value="4"></i>
+        <i class="star fas fa-star" data-value="5"></i>
+      </div>
+    </div>
+    <div class="category">
+      <h2>Code</h2>
+      <div class="stars" data-category="code">
+        <i class="star fas fa-star" data-value="1"></i>
+        <i class="star fas fa-star" data-value="2"></i>
+        <i class="star fas fa-star" data-value="3"></i>
+        <i class="star fas fa-star" data-value="4"></i>
+        <i class="star fas fa-star" data-value="5"></i>
+      </div>
+    </div>
+    <div class="category">
+      <h2>Intégration</h2>
+      <div class="stars" data-category="intégration">
+        <i class="star fas fa-star" data-value="1"></i>
+        <i class="star fas fa-star" data-value="2"></i>
+        <i class="star fas fa-star" data-value="3"></i>
+        <i class="star fas fa-star" data-value="4"></i>
+        <i class="star fas fa-star" data-value="5"></i>
+      </div>
+    </div>
+    <div class="category">
+      <h2>Vertu</h2>
+      <div class="stars" data-category="vertu">
+        <i class="star fas fa-star" data-value="1"></i>
+        <i class="star fas fa-star" data-value="2"></i>
+        <i class="star fas fa-star" data-value="3"></i>
+        <i class="star fas fa-star" data-value="4"></i>
+        <i class="star fas fa-star" data-value="5"></i>
+      </div>
+    </div>
+  </div>
+  <div id="totalRating" class="category">
+    <div class="stars total-stars">
+      <h2>Total</h2>
+      <i class="star_total fas fa-star" data-value="1"></i>
+      <i class="star_total fas fa-star" data-value="2"></i>
+      <i class="star_total fas fa-star" data-value="3"></i>
+      <i class="star_total fas fa-star" data-value="4"></i>
+      <i class="star_total fas fa-star" data-value="5"></i>
+      <!-- Ajouter les étoiles fractionnées -->
+      <i class="star_fraction fas fa-star-half-alt" data-value="0.5"></i>
+      <i class="star_fraction fas fa-star-half-alt" data-value="1.5"></i>
+      <i class="star_fraction fas fa-star-half-alt" data-value="2.5"></i>
+      <i class="star_fraction fas fa-star-half-alt" data-value="3.5"></i>
+      <i class="star_fraction fas fa-star-half-alt" data-value="4.5"></i>
+    </div>
+    <span class="rating-value">0</span>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

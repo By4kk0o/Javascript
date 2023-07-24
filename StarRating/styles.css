@@ -1,0 +1,89 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+}
+
+h1, h2 {
+  margin-bottom: 20px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 40px;
+}
+
+.category {
+  text-align: center;
+}
+
+.stars {
+  font-size: 40px;
+  cursor: pointer;
+}
+
+.stars .star .star_total {
+  display: inline-block;
+  margin: 5px;
+}
+
+.stars .star:hover,
+.stars .star.active {
+  color: #ffd700; /* Color for filled stars */
+}
+
+.rating-value {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.stars .star_total.active {
+  color: #ffd700; /* Color for filled stars */
+}
+
+.total-stars {
+  visibility: hidden;
+}
+
+.total-stars.visible {
+  visibility: visible;
+}
+
+.total-stars {
+  pointer-events: none;
+  cursor: default;
+}
+
+#totalRating .rating-value {
+  display: none;
+}
+
+/* Le code CSS pour les étoiles fractionnées */
+.stars .star_fraction {
+  position: relative;
+  font-size: 40px;
+  display: inline-block;
+}
+
+.stars .star_fraction::before {
+  content: "\f005";
+  color: #e0e0e0;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.stars .star_fraction.active::before {
+  content: "\f005";
+  color: #ffd700;
+  width: var(--star-width, 100%);
+  overflow: hidden;
+}
+
+.stars .star_fraction.active.filled::before {
+  width: 100%;
+}
