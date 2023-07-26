@@ -6,15 +6,15 @@ body {
     height: 100vh;
     margin: 0;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #282c34; /* Couleur de fond sombre */
-    color: #fff; /* Couleur du texte global */
+    background-color: #282c34;
+    color: #fff;
   }
   
   h1 {
     text-align: center;
     font-size: 40px;
-    color: #ffbf00; /* Jaune orangé */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4); /* Ombre du texte */
+    color: #ffbf00;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
     margin-bottom: 20px;
   }
   
@@ -28,9 +28,9 @@ body {
   .card {
     width: 100px;
     height: 150px;
-    background-color: #434c5e; /* Gris-bleu sombre */
-    border: 2px solid #282c34; /* Couleur de fond sombre */
-    border-radius: 10px; /* Bordure arrondie */
+    background-color: #434c5e;
+    border: 2px solid #282c34;
+    border-radius: 10px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -38,12 +38,12 @@ body {
     cursor: pointer;
     transition: background-color 0.3s ease-in-out;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    color: #fff; /* Couleur du texte */
+    color: #fff;
     text-transform: uppercase;
   }
   
   .card.flipped {
-    background-color: #63717f; /* Gris-bleu plus clair */
+    background-color: #63717f;
     transform: scale(1.05);
   }
   

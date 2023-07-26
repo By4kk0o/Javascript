@@ -17,7 +17,7 @@ const cardsData = [
     const card = document.createElement('div');
     card.classList.add('card');
     card.dataset.id = id;
-    card.dataset.value = value; // Nouvel attribut pour stocker la valeur originale
+    card.dataset.value = value;
     card.innerHTML = `<span>${value}</span>`;
     card.addEventListener('click', flipCard);
     return card;
@@ -38,7 +38,7 @@ const cardsData = [
     const card1 = flippedCards[0];
     const card2 = flippedCards[1];
   
-    if (card1.dataset.value === card2.dataset.value) { // Utilisation du nouvel attribut pour vérifier les correspondances
+    if (card1.dataset.value === card2.dataset.value) {
       matchedCards.push(card1, card2);
       flippedCards = [];
   
